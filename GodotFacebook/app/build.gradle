@@ -4,6 +4,7 @@ plugins {
 
 android {
     compileSdk 31
+    namespace 'net.oneseedfruit.godotfacebook'
 
     defaultConfig {
         minSdk 19
@@ -27,7 +28,7 @@ android {
 }
 
 dependencies {
-    compileOnly fileTree(dir:"libs", include:["godot-lib.3.4.4.stable.release.aar"])
+    compileOnly fileTree(dir:"libs", include:["godot-lib.3.6.1.stable.release.aar"])
     implementation 'androidx.appcompat:appcompat:1.4.2'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'com.facebook.android:facebook-android-sdk:latest.release'
